@@ -21,12 +21,15 @@ nav{display:flex;gap:28px}nav a{border-bottom-color:transparent}nav a[aria-curre
 @media(max-width:480px){header{height:auto;min-height:85px;flex-wrap:wrap;gap:18px;padding:22px 0}nav{gap:18px}nav a{font-size:14px}}
 nav{flex-wrap:wrap}@media(max-width:600px){header{height:auto;min-height:85px;flex-wrap:wrap;gap:18px;padding:22px 0}nav{gap:16px;row-gap:8px}}
 header{gap:24px}nav{flex-wrap:wrap;justify-content:flex-end;row-gap:10px}@media(max-width:900px){header{height:auto;min-height:100px;padding:24px 0;align-items:flex-start;flex-direction:column;gap:18px}nav{justify-content:flex-start;gap:10px 20px}nav a{padding:8px 0}}
+
+/* Keep every navigation destination visible at all viewport sizes. */
+header{height:auto;min-height:112px;padding-top:24px;padding-bottom:24px}header nav{display:flex;flex-wrap:wrap;overflow:visible;max-width:100%;min-width:0;gap:10px 24px}header nav a{display:inline-block;flex:0 0 auto;white-space:nowrap}header .brand{flex-shrink:0}@media(max-width:900px){header{min-height:85px;align-items:flex-start;flex-direction:column}header nav{justify-content:flex-start;gap:10px 18px}}
 </style>
 </head>
 <body id="home">
 <a class="skip" href="#main">Skip to content</a>
 <div class="shell">
-<header><a class="brand" href="#home" aria-label="Izzan home">izzan<span>.</span></a><nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About Me</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="experience.html">Experience &amp; Activities</a></nav></header>
+<header><a class="brand" href="#home" aria-label="Izzan home">izzan<span>.</span></a><nav aria-label="Main navigation"><a href="index.html?v=nav2" aria-current="page">Home</a><a href="about.html?v=nav2">About Me</a><a href="projects.html?v=nav2">Projects</a><a href="skills.html?v=nav2">Skills</a><a href="experience.html?v=nav2">Experience &amp; Activities</a></nav></header>
 <main id="main">
 <p class="eyebrow">A perspective shaped by business &amp; technology</p>
 <section class="hero" aria-labelledby="name">
